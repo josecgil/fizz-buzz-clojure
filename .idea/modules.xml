@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/first-project-clojure.iml" filepath="$PROJECT_DIR$/first-project-clojure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fizzbuzz-kata.iml" filepath="$PROJECT_DIR$/fizzbuzz-kata.iml" />
     </modules>
   </component>
 </project>
