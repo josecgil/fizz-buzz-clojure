@@ -1,17 +1,21 @@
 (ns first-project-clojure.core)
 
-(defn- is-fizz [n]
-  (if (= 0 (mod n 3)) true false)
+(defn- is-fizz [number]
+  (= 0 (mod number 3))
 )
 
-(defn- is-buzz [n]
-  (if (= 0 (mod n 5)) true false)
-  )
+(defn- is-buzz [number]
+  (= 0 (mod number 5))
+)
 
-(defn fizzbuzz [n]
-  (cond
-    (and (is-fizz n) (is-buzz n) )  "fizzbuzz"
-    (is-fizz n)  "fizz"
-    (is-buzz n) "buzz"
-    :else n)
+
+(defn fizzbuzz [number]
+    (def number-is-fizz (is-fizz number))
+    (def number-is-buzz (is-buzz number))
+
+    (cond
+      (and number-is-fizz number-is-buzz)  "fizzbuzz"
+      number-is-fizz "fizz"
+      number-is-buzz "buzz"
+      :else number)
 )

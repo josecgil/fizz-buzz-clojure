@@ -8,7 +8,7 @@
     )
   )
 
-(deftest values-1-to-100
+(deftest values-1-to-15
   (num-is 1 1)
   (num-is 2 2)
   (num-is 3 "fizz")
